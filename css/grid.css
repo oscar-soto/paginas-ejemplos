@@ -7,7 +7,7 @@
     width: 1000px;
     margin: 50px auto;
 }
-.container{
+.container-product{
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -19,7 +19,7 @@
     margin-bottom: 70px;
 }
 
-.image-container{
+.image-productContainer{
     padding: var(--space);
     padding: 0;
     margin: 0;
@@ -45,26 +45,67 @@
     font-size: 12px;
 }
 
-.image-container:nth-of-type(1){
+.image-productContainer:nth-of-type(1){
     grid-column: inicio / linea4;
-    grid-row: inicio/ linea1;
+    grid-row: inicio / linea1;
 }
 .description-container:nth-of-type(1){
     grid-column: linea4 / fin;
-    grid-row: inicio/ linea1;
+    grid-row: inicio / linea1;
 }
-.image-container:nth-of-type(2){
-    grid-column: linea7 / fin;
-    grid-row: linea1/ linea2;
+.image-productContainer:nth-of-type(2){
+    grid-column: none;
+    grid-row: linea1 / linea2;
 }
 .description-container:nth-of-type(2){
     grid-column: inicio / linea7;
-    grid-row: linea1/ linea2;
+    grid-row: linea1 / linea2;
 }
-.image-container:nth-of-type(3){
+.image-productContainer:nth-of-type(3){
     grid-column: inicio / linea4;
+    grid-row: linea2 / fin;
 }
 .description-container:nth-of-type(3){
     grid-column: linea4 / fin;
+    grid-row: linea2 / fin;
+
 }
 
+@media (max-width: 600px){
+    .products-title{
+        width: unset;
+    }
+    .container-product{
+        display: inherit;
+    }
+    .image-productContainer{
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .image-productContainer:nth-of-type(1){
+        grid-column: none;
+        grid-row: none;
+    }
+    .description-container:nth-of-type(1){
+        grid-column: none;
+        grid-row: none;
+    }
+    .image-productContainer:nth-of-type(2){
+        grid-column: none;
+        grid-row: none;
+    }
+    .description-container:nth-of-type(2){
+        grid-column: none;
+        grid-row: none;
+    }
+    .image-productContainer:nth-of-type(3){
+        grid-column: none;
+        grid-row: none;
+    }
+    .description-container:nth-of-type(3){
+        grid-column: none;
+        grid-row: none;
+    
+    }
+}

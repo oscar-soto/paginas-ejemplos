@@ -1,5 +1,5 @@
-@media (max-width: 600px){
-    
+@media (max-width: 600px){  
+     
     .main-section{
         padding: 4%;
     }
@@ -11,6 +11,9 @@
         margin-top: auto;
     }
 
+    .image-content{
+        margin: 0;
+    }
     .benefit{
         margin: 0;
         display: inherit;
