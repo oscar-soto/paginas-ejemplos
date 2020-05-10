@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.products-title{
+    color: var(--black-color);
+    font-size: 30px;
+    padding: 20px;
+    width: 1000px;
+    margin: 50px auto;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [linea7] 1fr [linea8] 1fr [linea9] 1fr [fin];
+    grid-template-rows: [inicio] 230px [linea1] 230px [linea2] 230px [fin];
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.image-container{
+    padding: var(--space);
+    padding: 0;
+    margin: 0;
+}
+.image-product{
+    /* object-fit: cover; */
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.title-product{
+    color: var(--black-color);
+    font-size: 17px;
+}
+.details-product{
+    color: var(--black-color);
+}
+
+.description-container{
+    justify-self: center;
+    padding: var(--space);
+    font-size: 12px;
+}
+
+.image-container:nth-of-type(1){
+    grid-column: inicio / linea4;
+    grid-row: inicio/ linea1;
+}
+.description-container:nth-of-type(1){
+    grid-column: linea4 / fin;
+    grid-row: inicio/ linea1;
+}
+.image-container:nth-of-type(2){
+    grid-column: linea7 / fin;
+    grid-row: linea1/ linea2;
+}
+.description-container:nth-of-type(2){
+    grid-column: inicio / linea7;
+    grid-row: linea1/ linea2;
+}
+.image-container:nth-of-type(3){
+    grid-column: inicio / linea4;
+}
+.description-container:nth-of-type(3){
+    grid-column: linea4 / fin;
+}
+
