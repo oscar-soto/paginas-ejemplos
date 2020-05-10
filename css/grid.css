@@ -83,29 +83,4 @@
         text-align: center;
         margin: 0;
     }
-    .image-productContainer:nth-of-type(1){
-        grid-column: none;
-        grid-row: none;
-    }
-    .description-container:nth-of-type(1){
-        grid-column: none;
-        grid-row: none;
-    }
-    .image-productContainer:nth-of-type(2){
-        grid-column: none;
-        grid-row: none;
-    }
-    .description-container:nth-of-type(2){
-        grid-column: none;
-        grid-row: none;
-    }
-    .image-productContainer:nth-of-type(3){
-        grid-column: none;
-        grid-row: none;
-    }
-    .description-container:nth-of-type(3){
-        grid-column: none;
-        grid-row: none;
-    
-    }
 }

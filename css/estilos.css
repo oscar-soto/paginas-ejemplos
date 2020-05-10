@@ -30,6 +30,9 @@ body,html{
     background: var(--white-color);
 }
 
+p, label{
+    font-size: var(--normal);
+}
 /* navegador */
 
 .nav-container{
